@@ -309,7 +309,7 @@ footer{
   margin-bottom: 8px;
 }
 
-.authors .me{
+.me{
   font-weight: 700;
   color: var(--ink);
   border-bottom: 1.5px solid var(--accent);
@@ -499,6 +499,39 @@ footer{
   margin: 0;
 }
 
+/* ---------- CV publications list ---------- */
+.pub-list{
+  list-style: decimal;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.pub-list li{
+  padding: 11px 0;
+  border-bottom: 1px solid var(--divider);
+  font-size: .88rem;
+  line-height: 1.55;
+}
+
+.pub-list li:last-child{ border-bottom: none; }
+
+.pub-list .ptitle{
+  display: block;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+
+.pub-list .pauthors{ color: var(--ink-soft); }
+
+.pub-list .pvenue{
+  color: var(--ink-faint);
+  font-style: italic;
+  margin-right: 8px;
+}
+
+.pub-list .tag{ margin-top: 4px; }
+
 /* ---------- responsive ---------- */
 @media (max-width: 860px){
   .shell{
@@ -520,4 +553,23 @@ footer{
   .venue-grid, .projects-grid, .skill-cats{ grid-template-columns: 1fr; }
   .cv-entry{ grid-template-columns: 1fr; gap: 4px; }
   .repo{ flex-direction: column; }
+}
+
+
+/* ---------- print (CV PDF export) ---------- */
+@media print{
+  body{ background: #fff; font-size: 12.5px; }
+  .shell{
+    display: block;
+    max-width: none;
+    padding: 0 8px;
+  }
+  .sidebar{ display: none; }
+  .avatar, .waveform, .social, .tabs{ display: none; }
+  .cv-actions{ display: none; }
+  a{ color: var(--ink); text-decoration: none; }
+  .venue-card, .project-card{ box-shadow: none; break-inside: avoid; }
+  .cv-block{ break-inside: avoid; margin-bottom: 22px; }
+  .cv-entry{ break-inside: avoid; }
+  footer{ display: none; }
 }

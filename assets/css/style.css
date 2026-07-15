@@ -247,8 +247,7 @@ main section{ margin-bottom: 44px; }
 }
 
 .venue-year{
-  font-family: "SFMono-Regular", Consolas, Menlo, monospace;
-  font-size: .74rem;
+  font-size: .68rem;
   font-weight: 700;
   color: var(--ink-faint);
   flex-shrink: 0;

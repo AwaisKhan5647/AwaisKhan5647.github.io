@@ -182,6 +182,34 @@ main section{ margin-bottom: 44px; }
   margin: 0 0 14px;
 }
 
+.lede strong{
+  color: var(--accent-ink);
+  font-weight: 700;
+}
+
+.lede.intro{
+  font-size: 1.18rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--ink);
+  margin-bottom: 18px;
+}
+
+.focus-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.focus-tags .tag{
+  background: var(--card-bg);
+  border: 1px solid var(--divider);
+  color: var(--ink-soft);
+  font-weight: 600;
+  padding: 6px 14px;
+}
+
 /* ---------- venue grid (About page) ---------- */
 .venue-grid{
   display: grid;

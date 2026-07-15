@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Awais Khan — Projects</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="sidebar">
+    <img class="avatar" src="assets/img/profile.jpg" alt="Portrait of Awais Khan">
+    <h1>Awais Khan</h1>
+    <div class="role">PhD Researcher, Computing</div>
+    <div class="affil">
+      Secure Modeling &amp; Intelligent Learning<br>
+      Systems (SMILES) Lab<br>
+      University of Michigan–Flint
+    </div>
+    <div class="loc">Flint, Michigan, USA</div>
+    <div class="social">
+      <a href="mailto:mawais@umich.edu" title="Email (UMich)" aria-label="Email UMich"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.01L12 12l8-5.99V6H4zm16 2.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16V8.24z"/></svg></a>
+      <a href="mailto:mawaiskhan7@gmail.com" title="Email (Gmail)" aria-label="Email Gmail"><svg viewBox="0 0 24 24"><path d="M2 4h20v16H2V4zm2 2v.01L12 12l8-5.99V6H4zm16 2.24l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.24V18h16V8.24z"/></svg></a>
+      <a href="https://scholar.google.com/citations?user=2UncrfYAAAAJ&hl=en" title="Google Scholar" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2 1 8l11 6 9-4.91V17h2V8L12 2zM5 13.18v4.06L12 21l7-3.76v-4.06L12 17l-7-3.82z"/></svg></a>
+      <a href="https://github.com/AwaisKhan5647" title="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.5 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.19-1.11-1.51-1.11-1.51-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .28.18.6.69.5A10.26 10.26 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/></svg></a>
+      <a href="https://www.linkedin.com/in/awais-khan-01620a14a/?skipRedirect=true" title="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M6.94 5a2 2 0 1 1-4-.02 2 2 0 0 1 4 .02zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.68-2.91V8.48z"/></svg></a>
+    </div>
+    <nav class="tabs">
+      <a href="index.html">About</a>
+      <a href="publications.html">Publications</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="repositories.html">Repositories</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section>
+      <span class="eyebrow">Projects</span>
+      <p class="lede">Three connected research threads, each feeding the others — detection methods need benchmarks to prove out against, and both need to be interpretable to be trusted in forensic and legal settings.</p>
+    </section>
+
+    <section>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <span class="num">01</span>
+          <h3>Audio Deepfake Detection</h3>
+          <p>Core detection research spanning spectro-temporal modeling, transformer and neuro-symbolic architectures, and robustness to real-world degradation — social media compression, codec artifacts, and re-recording. Includes SpoTNet, PSA-Net, and the ICASSP/INTERSPEECH detection lines.</p>
+          <div class="stack">
+            <span class="tag">PyTorch</span>
+            <span class="tag">Librosa</span>
+            <span class="tag">Transformers</span>
+            <span class="tag">XLSR</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="num">02</span>
+          <h3>Audio Deepfake Benchmarking</h3>
+          <p>Adversarial-robustness benchmarks and comparative studies for existing detectors, evaluating generalization across spoofing methods, datasets, and attack types — surfacing where published detectors quietly fail outside their training distribution.</p>
+          <div class="stack">
+            <span class="tag">Adversarial Attacks</span>
+            <span class="tag">ASVspoof</span>
+            <span class="tag">Evaluation</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <span class="num">03</span>
+          <h3>Interpretable Audio Deepfake Detection</h3>
+          <p>Moving detection from black-box classification toward explainable, symbolic reasoning — joint spectro-temporal and neuro-symbolic learning that produces decisions a forensic examiner or courtroom can actually audit, not just a confidence score.</p>
+          <div class="stack">
+            <span class="tag">Neuro-symbolic AI</span>
+            <span class="tag">Explainability</span>
+            <span class="tag">Forensics</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>© <span id="year"></span> Awais Khan</footer>
+  </main>
+</div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
